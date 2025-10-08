@@ -28,16 +28,15 @@ export const About = () => {
           <strong>Bachelor&apos;s</strong> degree in Computer Science to
           strengthen my foundation and enhance my skills. Currently, I&apos;m
           working at <strong>TechUp.Ai</strong>, where I’m building
-          high-performance platforms using Next.js, TypeScript, and
-          NestJS. I also gained valuable experience at{' '}
-          <strong>Xenara AI</strong>, where I contributed to developing
-          full-stack applications, optimizing performance, and implementing
-          scalable solutions. I enjoy working across both front-end and
-          back-end, turning ideas into functional, user-friendly products. My
-          goal is to continue advancing in the field, with aspirations to become
-          a Lead Software Engineer and eventually launch my own tech company.
-          I’m always eager to collaborate and create impactful digital
-          solutions.
+          high-performance platforms using Next.js, TypeScript, and NestJS. I
+          also gained valuable experience at <strong>Xenara AI</strong>, where I
+          contributed to developing full-stack applications, optimizing
+          performance, and implementing scalable solutions. I enjoy working
+          across both front-end and back-end, turning ideas into functional,
+          user-friendly products. My goal is to continue advancing in the field,
+          with aspirations to become a Lead Software Engineer and eventually
+          launch my own tech company. I’m always eager to collaborate and create
+          impactful digital solutions.
         </p>
         <p>
           I&apos;m open to job opportunities where I can contribute, learn, and
