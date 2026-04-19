@@ -9,7 +9,11 @@ export const Projects = () => {
   const { ref } = useSectionInView('Projects');
 
   return (
-    <section ref={ref} id="projects" className="my-10 scroll-mt-28 md:mb-20">
+    <section
+      ref={ref}
+      id="projects"
+      className="mx-auto my-10 max-w-7xl scroll-mt-28 md:mb-20"
+    >
       <SectionHeading
         heading="My Projects"
         content="Projects I worked on. Each of them containing its own case study."

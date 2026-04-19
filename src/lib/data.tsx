@@ -23,18 +23,68 @@ export const links = [
 
 export const projectsData = [
   {
+    image: '/images/pinkelephants.png',
+    title: 'Pink Elephants',
+    description:
+      'An AI-powered productivity and goal coaching platform scaled to 5,000+ monthly active users. Built intelligent goal decomposition features using adaptive AI, enabling users to break abstract goals into structured, actionable plans. Improved API response times by 35% through intelligent caching layers and optimized high-traffic endpoints under real production load.',
+    technologies: [
+      'Next.js',
+      'TypeScript',
+      'NestJS',
+      'Node.js',
+      'MongoDB',
+      'Redux Toolkit',
+      'Tailwind',
+      'Vercel',
+      'Railway',
+      'Redis',
+      'Framer Motion',
+      'Firebase',
+      'Zod',
+    ],
+    links: {
+      preview: 'https://pinkelephants.ai',
+      github: '/',
+    },
+  },
+  {
+    image: '/images/karaydaar.png',
+    title: 'Karaydaar',
+    description:
+      'A full-stack property rental marketplace for tenants and landlords in Pakistan. Features verified listings with rich search filters by location, budget, and property type, alongside landlord portfolio and listing management tools. Built with a mobile-first approach for consistent cross-device accessibility.',
+    technologies: [
+      'Next.js',
+      'TypeScript',
+      'Node.js',
+      'Django',
+      'PostgreSQL',
+      'Tailwind',
+      'Firebase',
+      'Vercel',
+      'AWS',
+      'Framer Motion',
+      'Joi',
+    ],
+    links: {
+      preview: 'https://karaydaar.com',
+      github: '/',
+    },
+  },
+  {
     image: '/images/abundant.png',
     title: 'Abundant Visas',
     description:
-      'Abundant Visas is an all-in-one platform designed to help individuals and businesses navigate the complex visa application process. It offers a wide range of services, including career counseling, visa filing for study, work, business, and visit visas, as well as document services, accommodation help, and travel booking. The platform features an intuitive interface to track visa application progress, access expert guidance, and manage visa-related services efficiently.',
+      'A global mobility and visa assistance platform simplifying international relocation, study abroad, and work permit processes. Integrated expert consulting and documentation support across study, work, visit, and business visa categories. Achieved a 30% reduction in latency through data request caching, delivering a faster, smoother user experience.',
     technologies: [
       'Next.js',
-      'Tailwind',
       'TypeScript',
-      'Tailwindcss',
+      'NestJS',
       'Firebase',
-      'NestJs',
+      'Tailwind',
       'Netlify',
+      'Zod',
+      'Framer Motion',
+      'Railway',
     ],
     links: {
       preview: 'https://abundantvisas.com',
@@ -42,21 +92,43 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/xenara.png',
-    title: 'Xenara AI',
+    image: '/images/skillport.png',
+    title: 'SkillPort',
     description:
-      'At Xenara AI, I’m working as a Full Stack Developer where I’ve contributed to building and maintaining a modern, scalable web platform. My work spans across the MERN stack, Next.js, and NestJS, handling both client-side and server-side logic.',
+      'A SaaS portfolio builder that lets users create and publish professional portfolios with custom themes and real-time analytics. Implemented a theme marketplace and purchase flow with integrated payment support for premium templates. Delivers live page-view analytics so users can track profile visibility and engagement.',
     technologies: [
       'Next.js',
       'TypeScript',
-      'NestJS',
-      'Sendgrid',
-      'Material UI',
-      'Zod',
+      'MongoDB',
+      'Tailwind',
+      'Framer Motion',
+      'Vercel',
     ],
     links: {
-      preview: 'https://xenara.ai',
-      github: 'https://github.com/Xenara-AI/xenara-website.git',
+      preview: 'https://skillport.vercel.app',
+      github: '/',
+    },
+  },
+  {
+    image: '/images/codeeditor.png',
+    title: 'Real-Time Collaborative Code Editor',
+    description:
+      'A final year project enabling multiple users to edit code simultaneously with live synchronization via WebSockets. Features syntax highlighting and autocomplete for JavaScript and Python, plus version control allowing users to save and revert code versions — reducing errors and improving team collaboration.',
+    technologies: [
+      'Codemirror',
+      'Lezer/highlight',
+      'React.js',
+      'TypeScript',
+      'WebSockets',
+      'Node.js',
+      'Express.js',
+      'Firebase',
+      'Netlify',
+      'Framer motion',
+    ],
+    links: {
+      preview: 'https://ts-code-editor-realtime.netlify.app',
+      github: '/',
     },
   },
   {
@@ -77,73 +149,39 @@ export const projectsData = [
       github: '/',
     },
   },
-  {
-    image: '/images/blog.png',
-    title: 'My Blog',
-    description:
-      'Check out my personal blog website.This is a modern blog platform built with Next.js, TypeScript, and Tailwind CSS. It features dynamic content rendering, responsive design, and advanced styling techniques, offering a seamless user experience for tech tutorials, interview preparation, and industry insights.',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'Radix UI',
-      'Framer Motion',
-      'Zod',
-      'Tailwind',
-    ],
-    links: {
-      preview: 'https://my-blog-loy4.vercel.app/',
-      github: '/',
-    },
-  },
 ] as const;
 
 export const experiencesData = [
   {
-    title: 'Full Stack Engineer Intern',
-    company: 'OpenVoiceHub',
+    title: 'Full Stack Engineer',
+    company: 'TechUp',
     description:
-      'As a Full Stack Engineer Intern at OpenVoiceHub, I contributed to building a voice-based collaboration platform, integrating real-time communication features using WebSockets and enhancing front-end components with React.js. I focused on improving the user experience by implementing features such as voice command recognition and live data syncing.',
-    period: 'Aug 2023 – Dec 2024',
+      'Own the full development lifecycle of a live affiliate marketing and e-commerce platform — from scoping features with the product team to production deployment. Architected global state with Redux Toolkit, reducing UI rendering overhead by 25% and boosting app performance by 30%. Contributed to a 20% increase in user engagement through scalable Next.js and TypeScript solutions.',
+    period: 'Nov 2024 – Present',
     technologies: [
-      'React.js',
-      'WebSockets',
-      'Node.js',
-      'MongoDB',
-      'Express.js',
+      'Next.js',
       'TypeScript',
+      'NestJS',
+      'Node.js',
+      'Redux Toolkit',
+      'Firebase',
+      'Vercel',
     ],
   },
   {
     title: 'Full Stack Engineer Intern',
     company: 'Xenara AI',
     description:
-      'During my remote internship at Xenara AI, I worked as a Full Stack Engineer, collaborating with senior developers on creating user-friendly interfaces with React.js. I contributed to optimizing SSR and SSG in Next.js for better SEO performance, built RESTful APIs using Node.js, and worked on performance optimization and debugging to ensure system stability and scalability.',
-    period: 'March 2024 – Nov 2024',
+      'Collaborated with senior engineers to build mobile-first, accessible UI components across a large-scale React application. Drove SSR vs. SSG rendering decisions per page, achieving a 40% improvement in search visibility and 50% faster content delivery. Applied global state management best practices to improve app performance and user interaction speed.',
+    period: 'Apr 2024 – Nov 2024',
     technologies: [
       'Next.js',
+      'TypeScript',
+      'NestJS',
+      'Node.js',
+      'Redux Toolkit',
       'Material UI',
-      'Node.js',
-      'NestJS',
-      'TypeScript',
-      'Redux Toolkit',
-      'Sendgrid',
       'MongoDB',
-    ],
-  },
-  {
-    title: 'Full Stack Engineer',
-    company: 'TechUp.Ai',
-    description:
-      'As a Full Stack Engineer at TechUp.Ai, I developed and maintained a high-performance affiliate marketing platform and e-commerce application using Next.js and TypeScript. I optimized server-side rendering (SSR) and static site generation (SSG) to improve SEO and load times, while implementing Redux Toolkit for efficient global state management. I also designed scalable APIs using Nest.js (Node.js) to improve backend communication and performance.',
-    period: 'Nov 2024 – Present',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'NestJS',
-      'Firebase',
-      'Node.js',
-      'Redux Toolkit',
-      'Netlify',
     ],
   },
 ] as const;

@@ -10,7 +10,7 @@ export const Skills = () => {
     <section
       aria-labelledby="skills"
       id="skills"
-      className="my-14 flex w-full scroll-mt-28 flex-col items-center md:mb-10 "
+      className="mx-auto my-14 flex w-full max-w-3xl scroll-mt-28 flex-col items-center md:mb-10"
     >
       <SectionHeading
         heading="My Skills"

@@ -1,12 +1,12 @@
 'use client';
 
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { toast } from 'sonner';
 
-import { sendEmailAction } from '@/actions/send-email';
+import { saveLeadAction } from '@/actions';
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
@@ -25,7 +25,10 @@ export const Contact = () => {
   } = useForm<TFormSchema>({ resolver: zodResolver(formSchema) });
 
   const onSubmit = async (values: TFormSchema) => {
-    const { data, error } = await sendEmailAction(values);
+    // const { data, error } = await sendEmailAction(values);
+    const { data, error } = await saveLeadAction(values);
+
+    console.log('Action response:', { data, error });
 
     if (error) {
       toast.error(error);
@@ -72,8 +75,8 @@ export const Contact = () => {
               className="text-muted-foreground hover:text-foreground h-fit p-0 font-medium underline transition-colors"
               asChild
             >
-              <Link href="mailto:zainali546official@gmail.com">
-                zainali546official@gmail.com
+              <Link href="mailto:asadali.dev512@gmail.com">
+                asadali.dev512@gmail.com
               </Link>
             </Button>{' '}
             or through this form.
@@ -85,6 +88,7 @@ export const Contact = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col items-center gap-5"
       >
+        {/* Email Field */}
         <div className="w-full max-w-xl">
           <label
             htmlFor="email"
@@ -93,7 +97,7 @@ export const Contact = () => {
               errors.email?.message && 'text-destructive'
             )}
           >
-            Email
+            Email <span className="text-destructive">*</span>
           </label>
           <input
             type="email"
@@ -107,10 +111,41 @@ export const Contact = () => {
           />
           {errors.email?.message && (
             <p className="text-destructive mt-1 text-sm">
-              {errors.email?.message}
+              {errors.email.message}
             </p>
           )}
         </div>
+
+        {/* ✅ NEW: Contact Number Field */}
+        <div className="w-full max-w-xl">
+          <label
+            htmlFor="contactNo"
+            className={cn(
+              'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+              errors.contactNo?.message && 'text-destructive'
+            )}
+          >
+            Contact Number{' '}
+            <span className="text-muted-foreground">(Optional)</span>
+          </label>
+          <input
+            type="tel"
+            id="contactNo"
+            placeholder="+1 (555) 123-4567"
+            {...register('contactNo')}
+            className={cn(
+              'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+              errors.contactNo?.message && 'border-destructive'
+            )}
+          />
+          {errors.contactNo?.message && (
+            <p className="text-destructive mt-1 text-sm">
+              {errors.contactNo.message}
+            </p>
+          )}
+        </div>
+
+        {/* Message Field */}
         <div className="w-full max-w-xl">
           <label
             htmlFor="message"
@@ -119,7 +154,7 @@ export const Contact = () => {
               errors.message?.message && 'text-destructive'
             )}
           >
-            Message
+            Message <span className="text-destructive">*</span>
           </label>
           <textarea
             id="message"
@@ -132,10 +167,11 @@ export const Contact = () => {
           ></textarea>
           {errors.message?.message && (
             <p className="text-destructive mt-1 text-sm">
-              {errors.message?.message}
+              {errors.message.message}
             </p>
           )}
         </div>
+
         <Button type="submit" size="lg">
           Submit <Icons.arrowRight className="ml-2 size-4" />
         </Button>

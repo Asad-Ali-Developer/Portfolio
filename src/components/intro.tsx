@@ -59,9 +59,9 @@ export const Intro = () => {
         transition={{
           delay: 0.1,
         }}
-        className="text-muted-foreground tracking-tighter max-w-xl text-justify"
+        className="text-muted-foreground max-w-xl text-justify tracking-tighter"
       >
-        I’m a passionate{' '}
+        I&apos;m a{' '}
         <span className="relative font-medium">
           <span className="relative z-10">Full Stack Engineer</span>
           <span
@@ -69,10 +69,19 @@ export const Intro = () => {
             className="absolute -inset-1 z-0 rounded bg-gradient-to-r from-indigo-500/20 via-sky-500/20 to-emerald-500/20 blur-sm"
           ></span>
         </span>{' '}
-        have over a 2 years of experience specializing in the MERN stack and
-        Next.js. I enjoy building responsive web applications that solve
-        real-world problems with clean code and smooth user experiences — from
-        front-end design to back-end logic.
+        with <strong>2+ years</strong> of experience shipping production-grade
+        apps — from an{' '}
+        <span className="relative font-medium">
+          <span className="relative z-10">AI coaching platform</span>
+          <span
+            aria-hidden="true"
+            className="absolute -inset-1 z-0 rounded bg-gradient-to-r from-violet-500/20 via-purple-500/20 to-pink-500/20 blur-sm"
+          ></span>
+        </span>{' '}
+        with <strong>5,000+ monthly users</strong> to full-scale e-commerce
+        platforms. I specialize in <strong>Next.js, TypeScript</strong> &amp;{' '}
+        <strong>Node.js</strong> — crafting fast, scalable, and user-friendly
+        experiences across the full stack.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -91,7 +100,7 @@ export const Intro = () => {
           <div className="flex gap-2">
             <Button variant="outline" size="icon" asChild>
               <Link
-                href="https://www.linkedin.com/in/asad-ali-najaf-35102720b"
+                href="https://www.linkedin.com/in/asad-ali-najaf/"
                 aria-label="Linkedin"
                 target="_blank"
               >
