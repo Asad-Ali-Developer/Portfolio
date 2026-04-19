@@ -406,14 +406,14 @@ function Modal({
               onChange={(e) => setNote(e.target.value)}
               placeholder="Add a private note about this lead..."
               rows={3}
+              className='bg-gray-50 text-black'
               style={{
                 width: '100%',
-                resize: 'vertical',
+                resize: 'none',
                 border: '1.5px solid #e5e7eb',
                 borderRadius: 10,
                 padding: '10px 12px',
                 fontSize: 14,
-                color: '#374151',
                 fontFamily: 'inherit',
                 outline: 'none',
                 boxSizing: 'border-box',

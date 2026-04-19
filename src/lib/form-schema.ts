@@ -17,14 +17,6 @@ export const formSchema = z.object({
     .string()
     .optional()
     .or(z.literal('')) // Allow empty string from form
-    .refine(
-      (val) =>
-        !val ||
-        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-          val
-        ),
-      'Please enter a valid phone number'
-    ),
 });
 
 export type TFormSchema = z.infer<typeof formSchema>;
