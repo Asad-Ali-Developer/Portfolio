@@ -8,7 +8,7 @@ export const env = createEnv({
     RESEND_API_KEY: z.string().min(1).optional(),
   },
   runtimeEnv: {
-    SITE_URL: process.env.SITE_URL,
+    SITE_URL: "https://asadali.xenvasol.com",
     GOOGLE_SITE_VERIFICATION_ID: process.env.GOOGLE_SITE_VERIFICATION_ID,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
   },
